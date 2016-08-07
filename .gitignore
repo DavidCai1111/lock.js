@@ -40,3 +40,4 @@ jspm_packages
 .vscode
 typings
 test-dir
+jsconfig.json
