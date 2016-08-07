@@ -1,0 +1,33 @@
+{
+  "name": "lock.js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/standard",
+    "e": "rm -rf test-dir && NODE_DEBUG=lock.js node lib/encrypt.js /Users/caiwei/workspace/lockjs-in-action ./test-dir",
+    "d": "NODE_DEBUG=lock.js node lib/decrypt.js rpn2360hwz9502kebzhtxfxbt9b4olhmuvlplrhv7ahjoo5hf ./test-dir"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidCai1993/lock.js.git"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "standard": {
+    "ignore": ["/lib/wrapper.js"]
+  },
+  "author": "DavidCai1993",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidCai1993/lock.js/issues"
+  },
+  "homepage": "https://github.com/DavidCai1993/lock.js#readme",
+  "dependencies": {
+    "fs-extra": "^0.30.0"
+  },
+  "devDependencies": {
+    "standard": "^7.1.2"
+  }
+}
