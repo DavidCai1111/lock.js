@@ -16,7 +16,9 @@
     "node": ">=4"
   },
   "standard": {
-    "ignore": ["/lib/wrapper.js"]
+    "ignore": [
+      "/lib/wrapper.js"
+    ]
   },
   "author": "DavidCai1993",
   "license": "MIT",
@@ -25,6 +27,7 @@
   },
   "homepage": "https://github.com/DavidCai1993/lock.js#readme",
   "dependencies": {
+    "commander": "^2.9.0",
     "fs-extra": "^0.30.0"
   },
   "devDependencies": {
