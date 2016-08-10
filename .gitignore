@@ -40,5 +40,7 @@ jspm_packages
 .vscode
 typings
 test-dir
+core
 lockjs-in-action
 jsconfig.json
+out.lockjs

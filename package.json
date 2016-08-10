@@ -1,12 +1,10 @@
 {
   "name": "lock.js",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Lock your JavaScript",
   "main": "lib/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/standard",
-    "e": "rm -rf test-dir && NODE_DEBUG=lock.js node lib/encrypt.js /Users/caiwei/workspace/lockjs-in-action ./test-dir",
-    "d": "NODE_DEBUG=lock.js node lib/decrypt.js rpn2360hwz9502kebzhtxfxbt9b4olhmuvlplrhv7ahjoo5hf ./test-dir"
+    "test": "./node_modules/.bin/standard"
   },
   "repository": {
     "type": "git",
@@ -27,8 +25,11 @@
   },
   "homepage": "https://github.com/DavidCai1993/lock.js#readme",
   "dependencies": {
+    "co": "^4.6.0",
     "commander": "^2.9.0",
-    "fs-extra": "^0.30.0"
+    "glob": "^7.0.5",
+    "map-obj": "^1.0.1",
+    "mz": "^2.4.0"
   },
   "devDependencies": {
     "standard": "^7.1.2"
