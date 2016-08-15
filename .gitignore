@@ -39,8 +39,10 @@ jspm_packages
 # Vscode
 .vscode
 typings
-test-dir
-core
-lockjs-in-action
 jsconfig.json
-out.lockjs
+
+# Test files
+out.lockjs*
+src/project.h
+src/libnode.so
+run.o

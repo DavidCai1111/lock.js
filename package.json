@@ -1,11 +1,10 @@
 {
   "name": "lock.js",
   "version": "0.1.0",
-  "description": "Lock your JavaScript",
+  "description": "Lock your Node.js project.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/standard",
-    "u": "c++ ./src/unlock.cc -I/usr/local/include/node -L./src -lnode -std=c++11 && ./a.out"
+    "test": "./node_modules/.bin/standard"
   },
   "repository": {
     "type": "git",
@@ -14,11 +13,6 @@
   "engines": {
     "node": ">=4"
   },
-  "standard": {
-    "ignore": [
-      "/lib/wrapper.js"
-    ]
-  },
   "author": "DavidCai1993",
   "license": "MIT",
   "bugs": {
@@ -26,16 +20,16 @@
   },
   "homepage": "https://github.com/DavidCai1993/lock.js#readme",
   "dependencies": {
-    "co": "^4.6.0",
-    "commander": "^2.9.0",
-    "glob": "^7.0.5",
-    "mz": "^2.4.0",
     "babel-core": "^6.13.2",
     "babel-preset-es2015": "^6.13.2",
+    "co": "^4.6.0",
+    "commander": "^2.9.0",
+    "fs-extra": "^0.30.0",
+    "glob": "^7.0.5",
+    "mz": "^2.4.0",
     "uglify-js": "^2.7.0"
   },
   "devDependencies": {
-    "babel": "^6.5.2",
     "standard": "^7.1.2"
   }
 }
