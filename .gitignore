@@ -46,3 +46,6 @@ out.lockjs*
 src/project.h
 src/libnode.so
 run.o
+
+# node-gyp
+build

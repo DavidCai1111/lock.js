@@ -27,6 +27,7 @@
     "fs-extra": "^0.30.0",
     "glob": "^7.0.5",
     "mz": "^2.4.0",
+    "node-gyp": "^3.4.0",
     "uglify-js": "^2.7.0"
   },
   "devDependencies": {
