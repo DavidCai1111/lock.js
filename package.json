@@ -13,6 +13,14 @@
   "engines": {
     "node": ">=4"
   },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "cpu": [
+    "x64",
+    "x86"
+  ],
   "author": "DavidCai1993",
   "license": "MIT",
   "bugs": {
@@ -24,6 +32,7 @@
     "babel-preset-es2015": "^6.13.2",
     "co": "^4.6.0",
     "commander": "^2.9.0",
+    "download": "^5.0.2",
     "fs-extra": "^0.30.0",
     "glob": "^7.0.5",
     "mz": "^2.4.0",

@@ -45,6 +45,7 @@ jsconfig.json
 out.lockjs*
 src/project.h
 src/libnode.so
+shared-libs
 run.o
 
 # node-gyp
