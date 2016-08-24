@@ -43,7 +43,7 @@ jsconfig.json
 
 # Test files
 lock.lockjs*
-src/project.h
+src/project-*
 src/libnode.so
 dist
 run.o
