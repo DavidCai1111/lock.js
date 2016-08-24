@@ -4,8 +4,7 @@
   "description": "Lock your Node.js project.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/standard",
-    "pack": "rm -rf lock.lockjs && node lib pack /Users/caiwei/workspace/lockjs-in-test index.js lock.lockjs"
+    "test": "./node_modules/.bin/standard"
   },
   "repository": {
     "type": "git",
@@ -37,7 +36,6 @@
     "fs-extra": "^0.30.0",
     "glob": "^7.0.5",
     "mz": "^2.4.0",
-    "node-gyp": "^3.4.0",
     "uglify-js": "^2.7.0"
   },
   "devDependencies": {
