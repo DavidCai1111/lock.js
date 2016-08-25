@@ -18,7 +18,7 @@ Commands:
 
   lock <projectPath> <entryPoint> <dest>  lock specified node.js project
   gen <packedProject> <dest> <publicKey>  generate a executable from the locked
-  install                                 install latest node.js shared library
+  install                                 install latest node.js header files and shared library
 
 Options:
 
@@ -34,7 +34,6 @@ Create a locked project:
 $ lockjs lock path/to/project  path/to/project/lib/index.js ./project.locked
 
 // ....
-// [lockjs] Done.
 // [lockjs] Locked file: "project.locked".
 // [lockjs] Key: "yourKey".
 ```
