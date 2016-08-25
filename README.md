@@ -1,2 +1,46 @@
 # lock.js
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
+Lock your Node.js project into an executable.
+
+## Install
+
+```
+npm install -g lockjs
+```
+
+## Help
+
+```
+Usage: lockjs [options] [command]
+
+Commands:
+
+  lock <projectPath> <entryPoint> <dest>  lock specified node.js project
+  gen <packedProject> <dest> <publicKey>  generate a executable from the locked
+  install                                 install latest node.js shared library
+
+Options:
+
+  -h, --help     output usage information
+  -V, --version  output the version number
+```
+
+## Quick Start
+
+Create a locked project:
+
+```
+$ lockjs lock path/to/project  path/to/project/lib/index.js ./project.locked
+
+// ....
+// [lockjs] Done.
+// [lockjs] Locked file: "project.locked".
+// [lockjs] Key: "yourKey".
+```
+
+Create an executable from the locked project and the generated key:
+
+```
+$ lockjs gen ./project.locked ./app.o youKey && ./app.o
+```
