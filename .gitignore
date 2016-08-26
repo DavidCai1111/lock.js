@@ -41,12 +41,8 @@ jspm_packages
 typings
 jsconfig.json
 
-# Test files
-lock.lockjs*
+# Temp files
+*.locked
 src/project-*
-src/libnode.so
 dist
-run.o
-
-# node-gyp
-build
+*.o

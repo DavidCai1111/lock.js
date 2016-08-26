@@ -16,8 +16,8 @@ Usage: lockjs [options] [command]
 
 Commands:
 
-  lock <projectPath> <entryPoint> <dest>  lock specified node.js project
-  gen <packedProject> <dest> <publicKey>  generate a executable from the locked
+  lock <projectPath> <entryPoint> <dest>  lock specified node.js project and generate a public key
+  gen <packedProject> <dest> <publicKey>  generate a executable from the locked and the public key
   install                                 install latest node.js header files and shared library
 
 Options:
