@@ -18,13 +18,13 @@ $ lockjs lock path/to/project  path/to/project/lib/index.js ./project.locked
 
 // ....
 // [lockjs] Locked file: "project.locked".
-// [lockjs] Key: "yourKey".
+// [lockjs] Key: "yourPublicKey".
 ```
 
 Create an executable from the locked project and its public key:
 
 ```
-$ lockjs gen ./project.locked ./app.o youKey && ./app.o
+$ lockjs gen ./project.locked ./app.o yourPublicKey
 ```
 
 Rock and roll:
