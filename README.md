@@ -1,5 +1,6 @@
 # lock.js
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![Build Status](https://travis-ci.org/DavidCai1993/lock.js.svg?branch=master)](https://travis-ci.org/DavidCai1993/lock.js)
 
 Lock your Node.js project into an executable.
 
