@@ -3,11 +3,48 @@
 
 Lock your Node.js project into an executable.
 
-## Install
+## Installation
 
 ```
 npm install -g lockjs
 ```
+
+## Quick Start
+
+Create a locked project and get a public key:
+
+```
+$ lockjs lock path/to/project  path/to/project/lib/index.js ./project.locked
+
+// ....
+// [lockjs] Locked file: "project.locked".
+// [lockjs] Key: "yourKey".
+```
+
+Create an executable from the locked project and its public key:
+
+```
+$ lockjs gen ./project.locked ./app.o youKey && ./app.o
+```
+
+Rock and roll:
+
+NOTES: The version of Node.js run inside the executable will be the latest one at the time it was created.
+
+```
+$ ./app.o
+```
+
+## Support Platform
+
+- Mac OS X
+- Linux 64 bit
+- Linux 32 bit
+
+## Environment Requiered
+
+- clang
+- Node.js > 4
 
 ## Help
 
@@ -24,22 +61,4 @@ Options:
 
   -h, --help     output usage information
   -V, --version  output the version number
-```
-
-## Quick Start
-
-Create a locked project:
-
-```
-$ lockjs lock path/to/project  path/to/project/lib/index.js ./project.locked
-
-// ....
-// [lockjs] Locked file: "project.locked".
-// [lockjs] Key: "yourKey".
-```
-
-Create an executable from the locked project and the generated key:
-
-```
-$ lockjs gen ./project.locked ./app.o youKey && ./app.o
 ```
