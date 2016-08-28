@@ -29,7 +29,7 @@ $ lockjs gen ./project.locked ./app.o youKey && ./app.o
 
 Rock and roll:
 
-NOTES: The version of Node.js run inside the executable will be the latest one at the time it was created.
+**NOTES:** The version of Node.js run inside the executable will be the latest (at the time the executable was created).
 
 ```
 $ ./app.o
