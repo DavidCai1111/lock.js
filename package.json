@@ -1,6 +1,6 @@
 {
   "name": "lockjs",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Pack your node.js project into an executable.",
   "main": "lib/index.js",
   "bin": {
@@ -39,8 +39,8 @@
     "glob": "^7.0.5",
     "is-binary-path": "^1.0.1",
     "mz": "^2.4.0",
-    "uglify-js": "^2.7.0",
-    "urllib": "^2.13.0"
+    "nodejs-latest": "^1.1.0",
+    "uglify-js": "^2.7.0"
   },
   "devDependencies": {
     "standard": "^7.1.2"
