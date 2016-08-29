@@ -1,4 +1,4 @@
-/* global describe it after before beforeEach */
+/* global describe it after before */
 'use strict'
 require('co-mocha')
 require('should')
@@ -23,13 +23,13 @@ describe('lock.js', function () {
   let pos = 0
 
   before(function () { utils.getRandom = function () { return 'KEY' } })
-  beforeEach(function () { if (utils.exists(dest)) locked = fs.readFileSync(dest) })
   after(function () { if (utils.exists(dest)) fs.unlinkSync(dest) })
 
   it('should generate the locked file', function * () {
     yield lock(src, dest, entryPoint)
 
     fs.statSync(dest).isFile().should.be.true()
+    locked = fs.readFileSync(dest)
   })
 
   it('should get right key header', function * () {

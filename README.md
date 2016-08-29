@@ -10,12 +10,19 @@ Lock your Node.js project into an executable.
 npm install -g lockjs
 ```
 
+## Feature
+
+- One binary executable.
+- Capable to handle the C++ addons.
+- Capable to handle the a lot `fs` methods which not use file descriptor.
+- Always run with the latest Node.js. (link the shared library at compiling time)
+
 ## Quick Start
 
-Create a locked project and get a public key:
+Create a locked project and get a public key by specifying the path and entry point of it:
 
 ```
-$ lockjs lock path/to/project  path/to/project/lib/index.js ./project.locked
+$ lockjs lock path/to/project path/to/project/lib/index.js ./project.locked
 
 // ....
 // [lockjs] Locked file: "project.locked".
@@ -29,8 +36,6 @@ $ lockjs gen ./project.locked ./app.o yourPublicKey
 ```
 
 Rock and roll:
-
-**NOTES:** The version of Node.js run inside the executable will be the latest (at the time the executable was created).
 
 ```
 $ ./app.o
