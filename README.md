@@ -19,7 +19,7 @@ npm install -g lockjs
 
 ## Quick Start
 
-Create a locked project and get a public key by specifying the path and entry point of it:
+### Create a locked project and get a public key by specifying the path and entry point of it:
 
 ```
 $ lockjs lock path/to/project path/to/project/lib/index.js ./project.locked
@@ -29,13 +29,19 @@ $ lockjs lock path/to/project path/to/project/lib/index.js ./project.locked
 // [lockjs] Key: "yourPublicKey".
 ```
 
-Create an executable from the locked project and its public key:
+### Create an executable from the locked project and its public key:
 
 ```
 $ lockjs gen ./project.locked ./app.o yourPublicKey
 ```
 
-Rock and roll:
+### Update `LD_LIBRARY_PATH` (Linux User Only):
+
+```
+export `lockjs link`
+```
+
+### Rock and roll:
 
 ```
 $ ./app.o

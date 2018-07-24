@@ -1,6 +1,6 @@
 {
   "name": "lockjs",
-  "version": "0.11.1",
+  "version": "0.11.2",
   "description": "Pack your node.js project into an executable.",
   "main": "lib/index.js",
   "bin": {
