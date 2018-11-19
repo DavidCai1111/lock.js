@@ -35,7 +35,7 @@ $ lockjs lock path/to/project path/to/project/lib/index.js ./project.locked
 $ lockjs gen ./project.locked ./app.o yourPublicKey
 ```
 
-### Update `LD_LIBRARY_PATH` (Linux User Only):
+### Update `LD_LIBRARY_PATH`:
 
 ```
 export `lockjs link`
