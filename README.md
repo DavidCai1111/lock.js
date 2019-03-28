@@ -53,7 +53,7 @@ $ ./app.o
 - Linux 64 bit
 - Linux 32 bit
 
-## Environment Requiered
+## Environment Required
 
 - clang
 - Node.js > 4
